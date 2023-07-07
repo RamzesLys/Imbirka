@@ -58,10 +58,7 @@ a {
 body {
   background: #1a1a19;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  /* max-width: 1440px; */
-  position: relative;
-  /* overflow: hidden; */
+
 }
 
 html, body {
@@ -75,62 +72,49 @@ html, body {
   flex-direction: column;
   position: relative;
   justify-content: space-between;
-  /* background:
-      linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
-	/* background-position: top center;
-	background-repeat: repeat; */
-  background: linear-gradient(149deg, rgba(24,187,156,1) 0%, rgba(106,57,175,1) 42%, rgba(187,24,148,1) 72%, rgba(115,53,134,1) 100%);
-  animation: gradient 5s infinite linear; 
-  background-size: 300%; 
-
-  background-attachment: fixed;
 }
-
-/* .gradient {
-  height: 300px; // Тут высота блока
-  width: 100%; // Тут длина
-  background: linear-gradient(149deg, rgba(24,187,156,1) 0%, rgba(106,57,175,1) 42%, rgba(187,24,148,1) 72%, rgba(115,53,134,1) 100%);
-  animation: gradient 10s infinite linear; // 10s - скорость анимации
-  background-size: 400%; // Можно менять и подбирать интенсивность
-} */
-
-@keyframes gradient {
-  0% {
-      background-position: 80% 0%;
-  }
-  50% {
-      background-position: 20% 100%;
-  }
-  100% {
-      background-position: 80% 0%;
-  }
-}
-
-/* .wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  justify-content: space-between;
-  align-items: center;
-  background-attachment: fixed;
-  animation: show;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-} */
 
 .container {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  /* min-height: 100%; */
+  min-height: 100%;
   width: 95%;
 }
+
+
+/* MAIN */
+.main {
+  position: relative;
+  height: 80vh;
+ }
+
+.bg-video {
+position: absolute;
+min-width: 100%;
+width: 100%;
+top: 0;
+right: 0;
+/* bottom: 0; */
+left: 0;
+min-height: 100%;
+opacity: 0.15;
+/* z-index: 0; */
+visibility: inherit;
+}
+  
+.main_title {
+font-family: 'AdleryPro', sans-serif;
+font-weight: 600;
+font-size: 2rem;
+color: #DC1F70;
+text-align: center;
+letter-spacing: 0.3rem;
+margin: 3rem 0;
+z-index: 1;
+position: relative;
+}
+
 
 /* HEADER */
 .header {
@@ -139,10 +123,12 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  z-index: 1;
 }
 
 .header_logo img {
-  width: 5rem;
+  width: 4rem;
+  z-index: 1;
 }
 
 .header_link-tastes, .header_link-tastes p, .header_links, .header_link-phone {
@@ -154,6 +140,8 @@ html, body {
   font-size: 1.2rem;
   color: #DC1F70;
   column-gap: 2rem;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .header_link-tastes, .header_link-phone {
@@ -184,45 +172,49 @@ html, body {
 }
 
 .header_links a:hover i svg path {
- fill: #B96969;
- transition: ease-in-out .3s;
+  fill: #B96969;
+  transition: ease-in-out .3s;
 }
 
 .header_link-facebook:hover svg path {
   fill: none;
   stroke: #B96969;
   transition: ease-in-out .3s;
- }
+}
 
- .header_link-facebook:hover i svg {
+.header_link-facebook:hover i svg {
   fill: none;
- }
+}
  
- .header_link-phone:hover svg path {
+.header_link-phone:hover svg path {
   fill: #B96969;
   transition: ease-in-out .3s;
- }
+}
 
- .header_link-phone:hover {
+.header_link-phone:hover {
   color: #B96969;
   transition: ease-in-out .3s;
- }
+}
+
+.order_btn {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-around; 
+  padding: 1em;
+  background-color: #C800B4;
+  width: fit-content;
+  position: sticky;
+  bottom: 2em;
+  left: calc(80%/2);
+  margin: 0 auto;
+  border-radius:2em;
+}
 
  /* MAIN */
 
- .main {
-  
- }
 
- .main_title {
-  font-family: 'AdleryPro', sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  color: #DC1F70;
-  text-align: center;
-  letter-spacing: 0.3rem;
-  margin: 3rem 0;
- }
 
  .main_card-block {
   display: flex;
