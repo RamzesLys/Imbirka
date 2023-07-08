@@ -111,7 +111,96 @@ html, body {
   /* min-height: 100%; */
   opacity: 0.15;
   z-index: 0;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  z-index: 1;
+  min-width: 100%;
+}
+
+.header_logo img {
+  width: 4rem;
+  z-index: 1;
+}
+
+.header_logo, .header_links, .header_link-phone {
+  width: calc(100%/3);
+}
+
+.header_links {
+  justify-content: center;
+}
+
+.header_link-tastes, .header_link-tastes p, .header_links, .header_link-phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'AdleryPro', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #4d4cea;
+  column-gap: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.header_link-tastes, .header_link-phone {
+  column-gap: 0.7rem;
+}
+
+.header_link-tastes p {
+  letter-spacing: 0.3em;
+}
+.header_link-phone {
+  font-family: 'Pacifico', sans-serif;
+  justify-content: flex-end;
+  /* font-size: 1.2em; */
+}
+
+.header_link-tastes:hover i svg path {
+  stroke: #7675e4;
+  transition: ease-in-out .3s;
+}
+
+.header_link-tastes:hover i svg path:last-child {
+  fill: #7675e4;
+  transition: ease-in-out .3s;
+}
+
+.header_link-tastes:hover p {
+  color: #7675e4;
+  transition: ease-in-out .3s;
+}
+
+.header_links a:hover i svg path {
+  fill: #7675e4;
+  transition: ease-in-out .3s;
+}
+
+.header_link-facebook:hover svg path {
+  fill: none;
+  stroke: #7675e4;
+  transition: ease-in-out .3s;
+}
+
+.header_link-facebook:hover i svg {
+  fill: none;
+}
  
+.header_link-phone:hover svg path {
+  fill: #7675e4;
+  transition: ease-in-out .3s;
+}
+
+.header_link-phone:hover {
+  color: #7675e4;
+  transition: ease-in-out .3s;
 }
   
 .main_title {
@@ -134,100 +223,38 @@ html, body {
   padding: 0.6em 1em;
   background-color: inherit;
   width: fit-content;
-  margin-bottom: 1em;
-  border-radius: 1em;
-  border: #4d4cea solid 0.2em;
-  color:#4d4cea;
+  margin-bottom: 2em;
+  border-radius: 0.7em;
+  outline: #A66011 solid 0.1em;
+  /* color:#4d4cea; */
+  color: #A66011;
   box-shadow: #1a1a19 5px 5px 5px;
   /* font-family: 'Pacifico', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  letter-spacing: 0.3em;
-}
-
-
-
-
-/* HEADER */
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  z-index: 1;
-}
-
-.header_logo img {
-  width: 4rem;
-  z-index: 1;
-}
-
-.header_link-tastes, .header_link-tastes p, .header_links, .header_link-phone {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  /* font-family: 'Montserrat', sans-serif; */
   font-family: 'AdleryPro', sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
-  color: #862bc9;
-  column-gap: 2rem;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.header_link-tastes, .header_link-phone {
-  column-gap: 0.7rem;
-}
-
-.header_link-tastes p {
   letter-spacing: 0.3em;
-}
-.header_link-phone {
-  font-family: 'Pacifico', sans-serif;
-  /* font-size: 1.2em; */
-}
-
-.header_link-tastes:hover i svg path {
-  stroke: #B96969;
-  transition: ease-in-out .3s;
+  background-image: url(../img/ButtonNoise.png);
+  backdrop-filter: blur(3px);
+  background-color:rgba(255, 159, 52, .2);
 }
 
-.header_link-tastes:hover i svg path:last-child {
-  fill: #B96969;
-  transition: ease-in-out .3s;
+.order_btn:hover {
+
+  background-color:rgba(255, 159, 52, .02);
+  outline: none;
+  transition: ease-out .5s;
+  box-shadow: #1a1a19 2px 2px 2px;
+  backdrop-filter: blur(1px);
+
+
 }
 
-.header_link-tastes:hover p {
-  color: #B96969;
-  transition: ease-in-out .3s;
-}
 
-.header_links a:hover i svg path {
-  fill: #B96969;
-  transition: ease-in-out .3s;
-}
 
-.header_link-facebook:hover svg path {
-  fill: none;
-  stroke: #B96969;
-  transition: ease-in-out .3s;
-}
 
-.header_link-facebook:hover i svg {
-  fill: none;
-}
- 
-.header_link-phone:hover svg path {
-  fill: #B96969;
-  transition: ease-in-out .3s;
-}
 
-.header_link-phone:hover {
-  color: #B96969;
-  transition: ease-in-out .3s;
-}
 
 
  /* MAIN */
