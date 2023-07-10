@@ -109,7 +109,7 @@ html, body {
   /* bottom: 0; */
   left: 0;
   /* min-height: 100%; */
-  opacity: 0.15;
+  opacity: 0.25;
   z-index: 0;
 }
 
@@ -145,7 +145,7 @@ html, body {
   font-weight: 600;
   font-size: 1.2rem;
   color: #4d4cea;
-  column-gap: 2rem;
+  column-gap: 1rem;
   cursor: pointer;
   z-index: 1;
 }
@@ -160,7 +160,6 @@ html, body {
 .header_link-phone {
   font-family: 'Pacifico', sans-serif;
   justify-content: flex-end;
-  /* font-size: 1.2em; */
 }
 
 .header_link-tastes:hover i svg path {
@@ -206,7 +205,7 @@ html, body {
 .main_title {
   font-family: 'AdleryPro', sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #4d4cea;
   text-align: center;
   letter-spacing: 0.3rem;
@@ -216,7 +215,7 @@ html, body {
 
 .order_btn {
   z-index: 1;
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items:center;
   justify-content: space-around; 
@@ -225,53 +224,81 @@ html, body {
   width: fit-content;
   margin-bottom: 2em;
   border-radius: 0.7em;
-  outline: #A66011 solid 0.1em;
-  /* color:#4d4cea; */
+  /* outline: #A66011 solid 0.1em; */
   color: #A66011;
   box-shadow: #1a1a19 5px 5px 5px;
-  /* font-family: 'Pacifico', sans-serif; */
-  /* font-family: 'Montserrat', sans-serif; */
   font-family: 'AdleryPro', sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   letter-spacing: 0.3em;
   background-image: url(../img/ButtonNoise.png);
-  backdrop-filter: blur(3px);
-  background-color:rgba(255, 159, 52, .2);
+  backdrop-filter: blur(2px);
+  background-color:rgba(255, 159, 52, .05);
+  transition: ease-out .5s;
+  position: relative;
+}
+
+.order_btn:before {
+  content: "";
+  position: absolute;
+  top: 0.2em;
+  right: 0.2em;
+  bottom: 0.2em;
+  left: 0.2em;
+  border-top: #A66011 solid 0.07em;
+  border-bottom: #A66011 solid 0.07em;
+  border-radius: 0.7rem;
+  transition: ease-out .5s;
+  transform: scaleX(0);
+}
+
+.order_btn:after {
+  content: "";
+  position: absolute;
+  top: 0.2em;
+  right: 0.2em;
+  bottom: 0.2em;
+  left: 0.2em;
+  border-right: #A66011 solid 0.07em;
+  border-left: #A66011 solid 0.07em;
+  border-radius: 0.7rem;
+  transition: ease-out .5s;
+  transform: scaleY(0);
+  font-size: 1.1rem;
+}
+
+.order_btn:hover::before, .order_btn:hover::after {
+  transform: scaleX(1);
+  transition: ease-out .5s;
 }
 
 .order_btn:hover {
-
-  background-color:rgba(255, 159, 52, .02);
-  outline: none;
-  transition: ease-out .5s;
-  box-shadow: #1a1a19 2px 2px 2px;
   backdrop-filter: blur(1px);
-
-
+  box-shadow: #1a1a19 1px 1px 1px;
+  transition: ease-out .5s;
 }
-
-
-
-
-
-
 
  /* MAIN */
 
+ .cards_block {
+  background-color: #7675e4;
+  padding: 3rem 0;
 
+  background: linear-gradient(180deg, rgba(118, 117, 228, 0.2) -15%, rgba(118, 117, 228,1.2) 75%);
+ }
 
- .main_card-block {
+ .cards_block .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 3rem;
  }
 
- .main_card {
+ .card {
   height: 270px;
   width: 200px;
-  border: #DC1F70 solid 3px;
+  /* border: #DC1F70 solid 3px; */
   padding: 0.5rem;
   border-radius: 1rem;
   background: radial-gradient(circle at 50% 0%, #00BCD4 65%, #FFFFff 65%);
@@ -279,36 +306,72 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: all ease-in-out .7s;
+  position: relative;
+  box-shadow: #1a1a19 5px 5px 5px;
  }
 
- .main_card-title {
+ .card-title {
   font-family: 'AdleryPro', sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   text-align: center;
   color: #C800B4;
-  padding-top: 2rem;
+  padding-top: 1rem;
  }
 
- .main_card img {
+ .card img {
   width: 100%;
+  transition: all ease-in-out .7s;
+ }
+
+ .card-desc {
+  opacity: 0;
+  transition: all ease-in-out .7s;
+  /* color: #7675e4; */
+  color: #A66011;
+  padding: 0.7rem;
+  font-size: 0.7rem;
+  line-height: 1.5em;
+  text-align: justify;
+  z-index: 2;
+ }
+
+ .card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2) -15%, rgba(0,0,0,1.2) 75%);
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out .7s;
+  display: none;
+ }
+
+ .card:hover {
+  transform: scale(.92);
+  box-shadow: #1a1a19 2px 2px 5px;
+ }
+
+ .card:hover img {
+ transform: scale(1.25);
+ transition: all ease-in-out .7s;
+ }
+
+ .card:hover .card-desc {
+  position: absolute;
+  bottom: 0;
   opacity: 1;
  }
 
- .main_card-desc {
-  display: none;
-  transition: ease-in-out .7s;
- }
-
- .main_card:hover img {
-  display: none;
-  transition: ease-in-out .7s;
- }
-
- .main_card:hover .main_card-desc {
+ .card:hover::after {
+  transition: all ease-in-out .7s;
   display: block;
-  transition: ease-in-out .7s;
  }
 
 
