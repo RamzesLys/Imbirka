@@ -417,15 +417,16 @@ html, body {
 
  .layer1-bottom_right {
   position: absolute;
-  width: 6em;
+  width: 7em;
   right: -1em;
   bottom: -1.5em;
   z-index: 3;
+  opacity: .9;
   transition: all ease-in-out .7s;
  }
 
  .card:hover .layer1-bottom_right {
-  right: -1.5em;
+  right: -2em;
   transition: all ease-in-out .7s;
  }
 
@@ -477,11 +478,11 @@ html, body {
 
  .layer2-bottom_right {
   position: absolute;
-  width: 6em;
-  right: -1em;
-  bottom: -1.5em;
+  width: 4em;
+  right: -2em;
+  bottom: -2.5em;
   z-index: 1;
-  opacity: .8;
+  opacity: .7;
   transition: all ease-in-out .7s;
  }
 
@@ -492,17 +493,19 @@ html, body {
 
  .layer2-bottom_left {
   position: absolute;
-  width: 4em;
+  width: 8em;
   left: -2.5em;
-  bottom: -1.5em;
+  bottom: -3.5em;
   z-index: 1;
   opacity: .7;
   transition: all ease-in-out .7s;
+  transform: rotate(172deg);
  }
 
  .card:hover .layer2-bottom_left {
-  left: -2em;
+  left: -3.5em;
   transition: all ease-in-out .7s;
+  transform: rotate(160deg);
  }
 
 
