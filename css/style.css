@@ -341,7 +341,7 @@ html, body {
 
  .card-desc {
   opacity: 0;
-  transition: all ease-in-out .7s;
+  /* transition: all ease-in-out .7s; */
   /* color: #7675e4; */
   color: #A66011;
   padding: 0.7rem;
@@ -349,6 +349,7 @@ html, body {
   line-height: 1.5em;
   text-align: justify;
   z-index: 2;
+  /* overflow: hidden; */
  }
 
  .card::after {
