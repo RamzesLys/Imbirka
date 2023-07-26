@@ -219,7 +219,7 @@ html, body {
   flex-direction: row;
   align-items:center;
   justify-content: space-around; 
-  padding: 0.6em 1em;
+  padding: 0.9em 0.5em 0.5em 0.5em;
   background-color: inherit;
   width: fit-content;
   margin-bottom: 2em;
