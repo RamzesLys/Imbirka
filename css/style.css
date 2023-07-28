@@ -86,7 +86,7 @@ html, body {
 /* MAIN */
 .main {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   background: #1a1a19;
  }
 
@@ -510,6 +510,47 @@ html, body {
  }
 
 
+ /* CARD 2 */
+ .card_2 {
+  background: radial-gradient(circle at 50% 0%, #FFD700 65%, #FFFFff 65%);
+ }
+
+ .card:hover:nth-child(2) .layer1-top_right {
+  right: -4.5em;
+ }
+
+ .card_2 .card-title {
+  color: #CF0018;
+ }
+
+.card_2 .layer1-top_left {
+  width: 5.5em;
+  left: -3.5em
+}
+
+.card_2 .layer1-top_right {
+  width: 5em;
+  right: -3em;
+}
+
+.card_2 .layer1-bottom_left {
+ bottom: -0.5em;
+}
+
+.card_2 .layer2-top_left {
+  width: 8em;
+  top: -3em;
+}
+
+.card_2 .layer2-bottom_right {
+  width: 6em;
+  right: -3em;
+  bottom: -3em
+}
+
+.card_2 .layer2-bottom_left {
+  bottom: -3em
+}
 
 
 
