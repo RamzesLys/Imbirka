@@ -552,6 +552,30 @@ html, body {
   bottom: -3em
 }
 
+/* CARD 3 */
+.card_3 {
+  background: radial-gradient(circle at 50% 0%, #D49986 65%, #FFFFff 65%);
+ }
+
+ .card_3 .card-title {
+  font-size: 1.3em;
+  /* color: #BB5128; */
+  color: #2e1b01;
+ }
+
+.card_3 .layer1-top_left {
+  width: 5em;
+  top: -2.3em;
+}
+
+.card_3 .layer2-top_left {
+  width: 6.4em;
+  left: 0.5em;
+ transform: rotate(45deg);
+ top: -2.8em;
+
+}
+
 
 
 
