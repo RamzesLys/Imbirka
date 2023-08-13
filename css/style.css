@@ -571,8 +571,8 @@ html, body {
 .card_3 .layer2-top_left {
   width: 6.4em;
   left: 0.5em;
- transform: rotate(45deg);
- top: -2.8em;
+  transform: rotate(45deg);
+  top: -2.8em;
 
 }
 
