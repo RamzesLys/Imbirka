@@ -337,6 +337,7 @@ html, body {
  .card_img {
   width: 100%;
   transition: all ease-in-out .7s;
+  padding-bottom: 1em;
  }
 
  .card-desc {
@@ -515,7 +516,7 @@ html, body {
 
  /* CARD 2 */
  .card_2 {
-  background: radial-gradient(circle at 50% 0%, #FFD700 65%, #FFFFff 65%);
+  background: radial-gradient(circle at 50% 0%, #ECA0B1 65%, #FFFFff 65%);
  }
 
  .card:hover:nth-child(2) .layer1-top_right {
@@ -533,7 +534,11 @@ html, body {
 
 .card_2 .layer1-top_right {
   width: 5em;
-  right: -3em;
+  right: -2.6em;
+}
+
+.card_2:hover.layer1-top_right {
+  right: -1.5em;
 }
 
 .card_2 .layer1-bottom_left {
@@ -571,11 +576,40 @@ html, body {
   top: -2.3em;
 }
 
+.card_3:hover .layer1-top_left {
+
+  left: 0em;
+}
+
 .card_3 .layer2-top_left {
-  width: 6.4em;
-  left: 0.5em;
-  transform: rotate(45deg);
-  top: -2.8em;
+  width: 3.4em;
+  left: 2em;
+  transform: rotate(15deg);
+  top: -1.8em;
+}
+.card_3:hover .layer2-top_left {
+  left: -3em;
+}
+
+.card_3 .layer2-bottom_right {
+  width: 3.5em;
+  bottom: -2em;
+}
+
+.card_3 .layer2-bottom_left {
+  width: 6em;
+  transform: rotate(0deg);
+  bottom: -2em;
+  left: 2em;
+}
+
+.card_3:hover .layer2-bottom_left {
+  transform: rotate(0deg);
+  left: -1em
+}
+
+.card:nth-child(3):hover .layer1-bottom_left {
+  transform: rotate(0);
 }
 
 
