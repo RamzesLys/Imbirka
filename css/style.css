@@ -302,7 +302,7 @@ html, body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 3rem;
+  gap: 7rem;
  }
 
  .card {
@@ -341,14 +341,16 @@ html, body {
 
  .card-desc {
   opacity: 0;
-  /* transition: all ease-in-out .7s; */
+  transition: all ease-in-out .7s;
   /* color: #7675e4; */
   color: #A66011;
   padding: 0.7rem;
+  bottom: 3em;
   font-size: 0.7rem;
   line-height: 1.5em;
   text-align: justify;
   z-index: 2;
+  position: absolute;
   /* overflow: hidden; */
  }
 
@@ -381,6 +383,7 @@ html, body {
   position: absolute;
   bottom: 0;
   opacity: 1;
+  bottom: 1em
  }
 
  .card:hover::after {
