@@ -562,13 +562,14 @@ html, body {
 
 /* CARD 3 */
 .card_3 {
-  background: radial-gradient(circle at 50% 0%, #D49986 65%, #FFFFff 65%);
+  background: radial-gradient(circle at 50% 0%, #e5b09f 65%, #FFFFff 65%);
  }
 
  .card_3 .card-title {
   font-size: 1.3em;
   /* color: #BB5128; */
-  color: #2e1b01;
+  /* color: #2e1b01; */
+  color: #FAD2B3
  }
 
 .card_3 .layer1-top_left {
@@ -577,7 +578,6 @@ html, body {
 }
 
 .card_3:hover .layer1-top_left {
-
   left: 0em;
 }
 
@@ -612,6 +612,131 @@ html, body {
   transform: rotate(0);
 }
 
+/* CARD 4 */
+
+.card_4 {
+  background: radial-gradient(circle at 50% 0%, #6CCBE1 65%, #FFFFff 65%);
+}
+
+.card_4 .card-title {
+  color: #492B27;
+
+}
+
+.card_4 .layer1-top_left, .layer2-bottom_right {
+  width: 3em;
+}
+
+.card_4 .layer1-bottom_left {
+  width: 5em;
+}
+
+.card_4 .layer2-top_left {
+  left: 6em;
+  top: -1.5em;
+  width: 4em;
+}
+
+.card_4 .layer2-bottom_right {
+  bottom: -1em
+}
+
+.card_4:hover .layer1-top_left {
+  left: 0em;
+}
+
+.card_4:hover .layer1-top_right {
+  right: -3em;
+}
+
+.card_4:hover .layer1-bottom_left {
+  left: 0em
+}
+
+.card_4:hover .layer2-top_left {
+  left: 4em;
+  width: 5em;
+}
+
+.card_4:hover .layer2-bottom_right {
+  right: -1em;
+}
+
+/* CARD 5 */
+
+.card_5 {
+  background: radial-gradient(circle at 50% 0%, #F9E4A8 65%, #FFFFff 65%);
+}
+
+.card_5 .card_img {
+  /* width: 90%; */
+  width: 80%;
+}
+
+.card_5 .card-title {
+  font-size: 1.2em;
+  color: #4F8C29;
+  padding-top: 1.2em;
+}
+
+.card_5:hover .card_img {
+  /* transform: scale(1.17); */
+  /* transition: all ease-in-out .7s; */
+  }
+
+.card_5 .layer1-top_left {
+  width: 6em;
+  top: -3em;
+}
+
+.card_5 .layer1-bottom_right {
+  width: 6em;
+  opacity: 1;
+}
+
+.card_5 .layer1-bottom_left {
+  width: 4.5em;
+}
 
 
+.card_5 .layer2-top_left {
+  width: 3em;
+  /* top: -3em; */
+  left: 1em;
+}
 
+.card_5 .layer2-top_right {
+  right: -3em;
+  top: -2em;
+}
+
+.card_5 .layer2-bottom_right {
+  width: 5em;
+  right: -3.5em;
+}
+
+.card_5 .layer2-bottom_left {
+  width: 6em;
+  left: 0.5em;
+  bottom: -1em;
+  transform: rotate(120deg);
+}
+
+.card_5:hover .layer2-top_left {
+  left: -3em;
+}
+
+.card_5:hover .layer2-top_right {
+  right: 2em;
+  top: -1em;
+  transform: rotate(-20deg);
+}
+
+.card_5:hover .layer2-bottom_right {
+  right: 2em;
+}
+
+.card_5:hover .layer2-bottom_left {
+ left: -4em;
+ transform: rotate(90deg);
+}
