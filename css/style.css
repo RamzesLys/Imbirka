@@ -588,7 +588,7 @@ html, body {
   top: -1.8em;
 }
 .card_3:hover .layer2-top_left {
-  left: -3em;
+  left: -2em;
 }
 
 .card_3 .layer2-bottom_right {
@@ -600,7 +600,7 @@ html, body {
   width: 6em;
   transform: rotate(0deg);
   bottom: -2em;
-  left: 2em;
+  left: 1em;
 }
 
 .card_3:hover .layer2-bottom_left {
@@ -624,7 +624,7 @@ html, body {
 }
 
 .card_4 .layer1-top_left, .layer2-bottom_right {
-  width: 3em;
+  width: 3.5em;
 }
 
 .card_4 .layer1-bottom_left {
@@ -739,4 +739,55 @@ html, body {
 .card_5:hover .layer2-bottom_left {
  left: -4em;
  transform: rotate(90deg);
+}
+
+
+/* CARD 6 */
+.card_6 {
+  background: radial-gradient(circle at 50% 0%, #F6CEC8 65%, #FFFFff 65%);
+}
+
+.card_6 .card_img {
+  width: 80%;
+}
+
+.card_6 .card-title {
+  color: #A32A30;
+}
+
+.card_6 .layer1-top_right {
+  width: 6em;
+  top: -2em;
+}
+
+.card_6 .layer1-bottom_left {
+  width: 7em;
+} 
+
+.card_6 .layer1-bottom_right {
+  width: 7em;
+  right: -3em;
+}
+
+.card_6 .layer2-top_left {
+  width: 9em;
+  top: -3em;
+}
+
+.card_6 .layer2-bottom_right {
+  width: 7em;
+  bottom: -2em;
+  right: -3em;
+}
+
+.card_6:hover .layer1-top_right {
+  right: -2.5em;
+}
+
+.card_6:hover .layer1-bottom_right {
+  right: -4em;
+}
+
+.card_6:hover .layer2-bottom_right {
+  right: 0;
 }
