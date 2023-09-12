@@ -281,18 +281,32 @@ html, body {
  /* DESCRITION */
 
  .description {
-  background-image: url(/img/bg-block2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  /* position: relative; */
+  background: url(/img/bg-block2.png) no-repeat center / cover #000000;
+  background-blend-mode:darken;
+  /* background-size: cover; */
+
+  /* background-attachment: fixed; */
+ 
   height: 100vh;
   /* backdrop-filter: blur(2px);
   background-color:rgba(255, 159, 52, .05); */
   background-color: #FFB5B5;
   padding: 3rem 0;
+  z-index: 1;
   /* background: linear-gradient(180deg, rgba(118, 117, 228, 0.2) -15%, rgba(118, 117, 228,1.2) 75%); */
  }
+
+ /* .description::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 2;
+ } */
 
  .description_title {
   font-family: 'AdleryPro', sans-serif;
@@ -302,7 +316,7 @@ html, body {
   text-align: center;
   letter-spacing: 0.2rem;
   margin: 2rem 0;
-  z-index: 1;
+  z-index: 30;
  }
 
 
