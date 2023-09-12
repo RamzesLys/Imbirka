@@ -57,21 +57,13 @@ window.addEventListener('DOMContentLoaded', function() {
   
     //використання класів для карточок
     class MenuCard {
-      constructor(src, alt, title, descr, price, parentSelector, ...classes) { //rest-параметри не підтримують дефолтні значення
+      constructor(src, alt, title, descr, parentSelector, ...classes) { //rest-параметри не підтримують дефолтні значення
         this.src = src;
         this.alt = alt;
         this.title = title;
         this.descr = descr;
-        this.price = price;
         this.classes = classes;
         this.parent = document.querySelector(parentSelector);
-        this.transfer = 39; //курс валют
-        this.changeToUAH();
-      }
-  
-      //конвертація USD в UAH
-      changeToUAH () {
-        this.price = Math.round(+this.price * this.transfer);
       }
   
       render() {
@@ -88,18 +80,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
   
         element.innerHTML = 
-        // `
-        // <div class="menu__item">
-        //   <img src=${this.src} alt=${this.alt} >
-        //   <h3 class="menu__item-subtitle">${this.title}</h3>
-        //   <div class="menu__item-descr">${this.descr}</div>
-        //   <div class="menu__item-divider"></div>
-        //   <div class="menu__item-price">
-        //     <div class="menu__item-cost">Цена:</div>
-        //     <div class="menu__item-total"><span>${this.price}</span> грн/день</div>
-        //   </div>
-        // </div>
-        // `;
+       
         `
         <img src=${this.src} alt=${this.alt} >
         <h3 class="menu__item-subtitle">${this.title}</h3>
