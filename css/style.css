@@ -125,7 +125,7 @@ html, body {
 }
 
 .header_logo img {
-  width: 10rem;
+  width: 6rem;
   z-index: 1;
 }
 
@@ -281,9 +281,9 @@ html, body {
  /* DESCRITION */
 
  .description {
-  /* position: relative; */
-  background: url(/img/bg-block2.png) no-repeat center / cover #000000;
-  background-blend-mode:darken;
+  position: relative;
+  background: url(/img/bg-block2-3.png) no-repeat center / cover;
+  /* background-blend-mode:darken; */
   /* background-size: cover; */
 
   /* background-attachment: fixed; */
@@ -292,8 +292,8 @@ html, body {
   /* backdrop-filter: blur(2px);
   background-color:rgba(255, 159, 52, .05); */
   background-color: #FFB5B5;
-  padding: 3rem 0;
-  z-index: 1;
+  /* padding: 3rem 0; */
+
   /* background: linear-gradient(180deg, rgba(118, 117, 228, 0.2) -15%, rgba(118, 117, 228,1.2) 75%); */
  }
 
@@ -315,8 +315,20 @@ html, body {
   color: #FFB5B5;
   text-align: center;
   letter-spacing: 0.2rem;
-  margin: 2rem 0;
-  z-index: 30;
+  
+  margin: 1rem 0;
+
+ }
+
+ .description_desc {
+  font-family: 'Pacifico', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFF;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  line-height: 1rem;
+  font-weight: 300;
  }
 
 
