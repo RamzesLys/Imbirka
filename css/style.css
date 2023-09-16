@@ -340,6 +340,18 @@ html, body {
   font-weight: 300;
  }
 
+ .description_tastes {
+  display: flex;
+  align-items:center;
+  gap: 1em;
+ }
+
+ .description_tastes img {
+  width: 1.5em;
+  text-align: left;
+ }
+
+
  
 
  
