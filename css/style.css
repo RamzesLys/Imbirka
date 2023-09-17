@@ -1,6 +1,6 @@
 @font-face {
   font-family: AdleryPro;
-  src: url(../fonts/AdleryPro.ttf);
+  src: url(/fonts/AdleryPro.ttf);
 }
 
 @font-face {
@@ -56,9 +56,7 @@ a {
 }
 
 body {
-
   font-family: "Montserrat", sans-serif;
-
 }
 
 html, body {
@@ -70,7 +68,7 @@ html, body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   justify-content: space-between;
 }
 
@@ -79,7 +77,7 @@ html, body {
   margin: 0 auto;
   padding: 0 15px;
   min-height: 100%;
-  width: 95%;
+  width: 85%;
 }
 
 
@@ -137,7 +135,7 @@ html, body {
   justify-content: center;
 }
 
-.header_link-tastes, .header_link-tastes p, .header_links, .header_link-phone {
+.header_links, .header_link-phone {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -150,55 +148,35 @@ html, body {
   z-index: 1;
 }
 
-.header_link-tastes, .header_link-phone {
+.header_link-phone {
   column-gap: 0.7rem;
 }
 
-.header_link-tastes p {
-  letter-spacing: 0.3em;
-}
 .header_link-phone {
   font-family: 'Pacifico', sans-serif;
   justify-content: flex-end;
 }
 
-.header_link-tastes:hover i svg path {
-  stroke: #d48e8e;
-  transition: ease-in-out .3s;
-}
-
-.header_link-tastes:hover i svg path:last-child {
-  fill: #d48e8e;
-  transition: ease-in-out .3s;
-}
-
-.header_link-tastes:hover p {
-  color: #d48e8e;
-  transition: ease-in-out .3s;
-}
-
-.header_links a:hover i svg path {
-  fill: #d48e8e;
+.header_link-telegram:hover svg path, 
+.header_link-instagram:hover svg path, 
+.header_link-viber:hover svg path {
+  fill: #fff;
   transition: ease-in-out .3s;
 }
 
 .header_link-facebook:hover svg path {
-  fill: none;
-  stroke: #d48e8e;
+  stroke: #fff;
   transition: ease-in-out .3s;
 }
 
-.header_link-facebook:hover i svg {
-  fill: none;
-}
- 
 .header_link-phone:hover svg path {
-  fill: #d48e8e;
+  /* fill: #d48e8e; */
+  fill: #fff;
   transition: ease-in-out .3s;
 }
 
 .header_link-phone:hover {
-  color: #d48e8e;
+  color: #fff;
   transition: ease-in-out .3s;
 }
   
@@ -217,7 +195,7 @@ html, body {
   0 -1px 2px #fff;
 }
 
-.order_btn {
+.order_btn,  .form_btn  {
   z-index: 1;
   display: inline-flex;
   flex-direction: row;
@@ -242,7 +220,7 @@ html, body {
   position: relative;
 }
 
-.order_btn:before {
+.order_btn:before, .form_btn:before {
   content: "";
   position: absolute;
   top: 0.2em;
@@ -256,7 +234,7 @@ html, body {
   transform: scaleX(0);
 }
 
-.order_btn:after {
+.order_btn:after, .form_btn:after {
   content: "";
   position: absolute;
   top: 0.2em;
@@ -271,12 +249,15 @@ html, body {
   font-size: 1.1rem;
 }
 
-.order_btn:hover::before, .order_btn:hover::after {
+.order_btn:hover::before, 
+.order_btn:hover::after, 
+.form_btn:hover::before, 
+.form_btn:hover::after {
   transform: scaleX(1);
   transition: ease-out .5s;
 }
 
-.order_btn:hover {
+.order_btn:hover, .form_btn:hover {
   backdrop-filter: blur(1px);
   box-shadow: #1a1a19 1px 1px 1px;
   transition: ease-out .5s;
@@ -286,32 +267,12 @@ html, body {
 
  .description {
   position: relative;
-  background: url(/img/bg-block2-3.png) no-repeat center  center / 90%;
-  /* background-blend-mode:darken; */
-  /* background-size: cover; */
-
-  /* background-attachment: fixed; */
- 
-  /* height: 100vh; */
-  backdrop-filter: blur(2px);
-  /*background-color:rgba(255, 159, 52, .05); */
-  /* background-color: #FFB5B5; */
+  background: url(/img/bg-block2-4.png) repeat center / 100%;
   background-color: #000;
-  padding: 3rem 0;
-
-  /* background: linear-gradient(180deg, rgba(118, 117, 228, 0.2) -15%, rgba(118, 117, 228,1.2) 75%); */
+  padding: 1rem 0;
+  background-attachment: fixed;
+  /* height: 100vh; */
  }
-
- /* .description::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,.5);
-  z-index: 2;
- } */
 
  .description_title {
   font-family: 'AdleryPro', sans-serif;
@@ -329,8 +290,8 @@ html, body {
  }
 
  .description_desc, .description_tastes {
-  /* font-family: 'Pacifico', sans-serif; */
-  font-family: cursive;
+  font-family: 'Pacifico', sans-serif;
+  /* font-family: cursive; */
   font-weight: 600;
   font-size: 1.2rem;
   color: #FFF;
@@ -349,6 +310,43 @@ html, body {
  .description_tastes img {
   width: 1.5em;
   text-align: left;
+ }
+
+ .description_form {
+  padding: 2em;
+  margin: 1em 0;
+  background-image: url(/img/ButtonNoise.png);
+  backdrop-filter: blur(1.5px);
+  background-color:rgba(255, 159, 52, .05);
+  transition: ease-out .5s;
+  border-radius: 1em;
+ }
+
+ .form_desc {
+  text-align: center;
+  padding: 0 0 2em 0;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+ }
+
+ .form {
+  /* gap: 2em; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .form_name, .form_phone {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #fbcbcb;
+ }
+
+ .form_btn {
+  margin: 0;
+
  }
 
 
