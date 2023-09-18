@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
   
   const btn = document.querySelector('.form_btn')
 
-  btn.addEventListener('submit', () => {
+  btn.addEventListener('submit', (event) => {
    event.preventDefault();
    
    if (formPhone.value == 'string') {
