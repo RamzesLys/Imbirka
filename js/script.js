@@ -19,9 +19,10 @@ window.addEventListener('DOMContentLoaded', function() {
   
   const btn = document.querySelector('.form_btn')
 
-  btn.addEventListener('click', () => {
+  btn.addEventListener('submit', () => {
    event.preventDefault();
-   if (formPhone.value !== typeof('number') || formPhone.lenght <= 7) {
+   
+   if (formPhone.value == 'string') {
     console.log(`Шановний(на) ${formName.value}, введіть коректний номер телефону`);
    }
     console.log(`Ім'я ${formName.value}, телефон ${formPhone.value}`);
