@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function() {
   btn.addEventListener('submit', (event) => {
    event.preventDefault();
    
-   if (formPhone.value == 'string') {
+   if (formPhone.value !== typeOf(Number)) {
     console.log(`Шановний(на) ${formName.value}, введіть коректний номер телефону`);
    }
     console.log(`Ім'я ${formName.value}, телефон ${formPhone.value}`);
