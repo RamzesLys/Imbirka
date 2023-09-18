@@ -315,7 +315,7 @@ html, body {
  .description_form {
   padding: 2em;
   margin: 1em 0;
-  background-image: url(/img/ButtonNoise.png);
+  background-image: url(../img/ButtonNoise.png);
   backdrop-filter: blur(1.5px);
   background-color:rgba(255, 159, 52, .05);
   transition: ease-out .5s;
