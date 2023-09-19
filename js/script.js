@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
   // // const btn = document.querySelector('.form_btn')
   // const btn = document.querySelector('button[type=submit]')
 
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (event) => {
    event.preventDefault();
    
    if (formPhone.value !== typeOf(Number)) {
@@ -28,4 +28,3 @@ window.addEventListener('DOMContentLoaded', function() {
     console.log(`Ім'я ${formName.value}, телефон ${formPhone.value}`);
   })
   
->>>>>>> bb52505c08c01f3a124f50e98ee4448b107a707e
