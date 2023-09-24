@@ -321,7 +321,7 @@ html, body {
   background-color:rgba(255, 159, 52, .05);
   transition: ease-out .5s;
   border-radius: 0.7em;
-  box-shadow: 0.2em 0.2em 1em;
+  box-shadow: #fff 0.2em 0.2em 1em;
  }
 
  .form_desc {
