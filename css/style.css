@@ -317,11 +317,11 @@ html, body {
   padding: 2em;
   margin: 1em 0;
   background-image: url(../img/ButtonNoise.png);
-  backdrop-filter: blur(1.5px);
+  backdrop-filter: blur(0.2em);
   background-color:rgba(255, 159, 52, .05);
   transition: ease-out .5s;
-  border-radius: 1em;
-  box-shadow: #fff 2px 2px 4px;
+  border-radius: 0.7em;
+  box-shadow: 0.2em 0.2em 1em;
  }
 
  .form_desc {
