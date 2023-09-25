@@ -269,7 +269,7 @@ html, body {
 
  .description {
   position: relative;
-  background: url(../img/bg-block2-5.png) repeat center / 50%;
+  background: url(../img/bg-block2-6.png) repeat-x center / 100%;
   background-color: #000;
   padding: 2rem 0 0 0;
   background-attachment: fixed;
@@ -322,7 +322,8 @@ html, body {
   background-color:rgba(255, 159, 52, .05);
   transition: ease-out .5s;
   border-radius: 0.7em;
-  box-shadow: #8C5D5D 0.2em 0.2em 1em;
+  /* box-shadow: #8C5D5D 0.2em 0.2em 1em; */
+  box-shadow: #21221c 0.2em 0.2em 1em;
  }
 
  .form_desc {
