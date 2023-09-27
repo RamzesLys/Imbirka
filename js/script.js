@@ -1,12 +1,13 @@
 window.addEventListener('DOMContentLoaded', function() {
 
-  // const tastes = document.querySelectorAll('.description_tastes');
-  // let img = document.innerText = `<img src="img/Logo.svg" alt="Big Logo">`;
+const menuHamb = document.querySelector('.header_hamb');
+const menuHidden = document.querySelector('.header_hidden');
 
-  // tastes.forEach((e) => {
-  // e.prepend(img)
-  //   console.log(e);
-  // }) 
+menuHamb.addEventListener('click', () => {
+  menuHamb.classList.toggle('active');
+  menuHidden.classList.toggle('active');
+  console.log('click');
+})
 
 
   
@@ -19,12 +20,12 @@ window.addEventListener('DOMContentLoaded', function() {
   // // const btn = document.querySelector('.form_btn')
   // const btn = document.querySelector('button[type=submit]')
 
-  btn.addEventListener('click', (event) => {
-   event.preventDefault();
+  // btn.addEventListener('click', (event) => {
+  //  event.preventDefault();
    
-   if (formPhone.value !== typeOf(Number)) {
-    console.log(`Шановний(на) ${formName.value}, введіть коректний номер телефону`);
-   }
-    console.log(`Ім'я ${formName.value}, телефон ${formPhone.value}`);
-  })
+  //  if (formPhone.value !== typeOf(Number)) {
+  //   console.log(`Шановний(на) ${formName.value}, введіть коректний номер телефону`);
+  //  }
+  //   console.log(`Ім'я ${formName.value}, телефон ${formPhone.value}`);
+  // })
   
