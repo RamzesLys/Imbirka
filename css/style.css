@@ -840,6 +840,7 @@ html, body {
  .form_btn {
   margin: 0;
   cursor: pointer;
+  backdrop-filter: blur(1em);
  }
 
  /* FOOTER */
