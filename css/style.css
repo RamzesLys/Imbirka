@@ -393,17 +393,6 @@ html, body {
   text-align: left;
  }
 
- .description_form {
-  padding: 1em;
-  margin: 2em 0;
-  background-image: url(../img/ButtonNoise.png);
-  backdrop-filter: blur(0.15em);
-  background-color:rgba(255, 159, 52, .05);
-  transition: ease-out .5s;
-  border-radius: 0.7em;
-  /* box-shadow: #8C5D5D 0.2em 0.2em 1em; */
-  box-shadow: #21221c 0.2em 0.2em 1em;
- }
 
  .form_desc {
   text-align: center;
@@ -550,6 +539,7 @@ html, body {
 }
 
 .wrapper {
+  position: relative;
   min-height: 100%;
   overflow: hidden;
   display: flex;
@@ -802,7 +792,7 @@ html, body {
   text-align: left;
  }
 
- .description_form {
+ /* .description_form {
   padding: 1em;
   margin: 2em 0;
   background-image: url(../img/ButtonNoise.png);
@@ -810,9 +800,8 @@ html, body {
   background-color:rgba(255, 159, 52, .05);
   transition: ease-out .5s;
   border-radius: 0.7em;
-  /* box-shadow: #8C5D5D 0.2em 0.2em 1em; */
   box-shadow: #21221c 0.2em 0.2em 1em;
- }
+ } */
 
  .form_desc {
   text-align: center;
@@ -852,6 +841,7 @@ html, body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+  margin-top: 2em;
 }
 
 .footer_logo-block {
@@ -893,6 +883,24 @@ html, body {
   fill: #fff;
   transition: ease-in-out .3s;
 }
+
+/* MODAL WINDOW */
+.form {
+  padding: 1em;
+  margin: 2em 0;
+  background-image: url(../img/ButtonNoise.png);
+  backdrop-filter: blur(0.15em);
+  background-color:rgba(255, 159, 52, .05);
+  transition: ease-out .5s;
+  border-radius: 0.7em;
+  /* box-shadow: #8C5D5D 0.2em 0.2em 1em; */
+  box-shadow: #21221c 0.2em 0.2em 1em;
+/* 
+  display: none;
+  position: fixed;
+  margin: 0 auto; */
+ }
+
 
 /* MEDIA */
 @media screen and (max-width: 1200px) {
