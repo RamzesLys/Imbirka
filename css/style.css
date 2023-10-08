@@ -885,6 +885,14 @@ html, body {
 }
 
 /* MODAL WINDOW */
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin: 0 auto;
+  position: fixed;
+}
+
 .form {
   padding: 1em;
   margin: 2em 0;
@@ -895,6 +903,10 @@ html, body {
   border-radius: 0.7em;
   /* box-shadow: #8C5D5D 0.2em 0.2em 1em; */
   box-shadow: #21221c 0.2em 0.2em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  width: 50vw;
 /* 
   display: none;
   position: fixed;
