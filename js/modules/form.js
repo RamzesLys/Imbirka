@@ -8,16 +8,31 @@ const form = document.querySelector('.form'),
 let formName = document.querySelector('.form_name');
 let formPhone = document.querySelector('.form_phone');
 
+const closeModal = (e) => {
+  e.preventDefault();
+ 
+  
+}
+
+document.addEventListener('click', (e) => {
+  if (e.target !== form) {
+    formWrapper.style.display = 'none';
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Escape') {
+    formWrapper.style.display = 'none';
+  }
+})
+
 
 setTimeout(() => {
   formWrapper.style.display = 'inherit';
-  // wrapper.classList.add('overlay')
 }, 5000);
 
-btnClose.addEventListener('click', (e) => {
-  e.preventDefault();
-  formWrapper.style.display = 'none';
-});
+btnClose.addEventListener('click', closeModal);
+
 
 btn.addEventListener('click', (event) => {
 event.preventDefault();

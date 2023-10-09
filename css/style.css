@@ -498,8 +498,9 @@ html, body {
   box-shadow: #ffffff 0.2em 0.2em 1em;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
-  width: 50vw;
+  width: 60vw;
   position: relative;
   margin: 0 auto;
   transition: ease-in-out 3s;
@@ -533,7 +534,11 @@ html, body {
 
  .form_btn-close:hover svg path {
   stroke: #fff;
+ }
+
+ .form_btn-close:hover {
   transition: ease-in-out .3s;
+  box-shadow: #ffffff 0.1em 0.1em 0.5em;
  }
 
  .form_desc {
@@ -544,8 +549,6 @@ html, body {
   font-family: "AdleryPro", sans-serif;
   letter-spacing: 0.1em;
  }
-
-
 
  .form_name, .form_phone {
   padding: 0.5em;
@@ -558,9 +561,6 @@ html, body {
   cursor: pointer;
   backdrop-filter: blur(1em);
  }
-
-
-
 
 /* MEDIA */
 @media screen and (max-width: 1200px) {
