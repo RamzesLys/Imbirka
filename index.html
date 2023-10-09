@@ -265,7 +265,7 @@
 		</section>
 
 					
-		<form action="#" class="form">
+		<form name="form_order" action="#" class="form">
 
 			<p class="form_desc">Напишіть нам і ми зв'яжемось для уточнення деталей замовлення</p>
 			<button class="form_btn-close">
@@ -275,11 +275,14 @@
 				</svg>	
 			</button>
 			<input required autofocus placeholder="Ваше ім'я" name="name" type="text" class="input form_name">
-			<input required placeholder="Ваш номер телефону" name="tel" type="phone" class="input form_phone">
+			<input required placeholder="Ваш номер телефону" name="phone" type="phone" class="input form_phone">
 			<!-- <input placeholder="Повідомлення (не обов'язково)" name="message" type="text" class="input form_message"> -->
 			<textarea placeholder="Повідомлення (не обов'язково)" name="message" id="message"  rows="3" class="input form_message"></textarea>
 			<button class="form_btn" type="submit">Відправити</button>
+
 		</form>
+
+		<span id="sendText"></span>
 		<!-- <div class="form_wrapper">
 
 				

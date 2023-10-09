@@ -491,9 +491,15 @@ html, body {
   margin: 0 auto;
   transition: ease-in-out 3s;
   left: calc(100vw/2 - 10em);
-  top: calc(100vh/2 - 10em);
+  top: calc(100vh/2 - 15em);
   z-index: 5em;
   display: none;
+}
+
+.form span {
+  color: #A66011;
+  display: none;
+  font-size: 3em;
 }
 
 
@@ -565,7 +571,7 @@ html, body {
 }
 
 ._eclipse {
- 
+ background: rgba(0, 0, 0, .6);
 }
 
 /* MEDIA */
