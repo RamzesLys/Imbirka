@@ -1,10 +1,23 @@
 function form() {
-let form = document.querySelector('.form')
+const form = document.querySelector('.form'),
+      btn = document.querySelector('button[type=submit]'),
+      btnClose = document.querySelector('.form_btn-close'),
+      formWrapper = document.querySelector('.form_wrapper'),
+      wrapper = document.querySelector('.wrapper');
+
 let formName = document.querySelector('.form_name');
 let formPhone = document.querySelector('.form_phone');
-  
-// const btn = document.querySelector('.form_btn')
-const btn = document.querySelector('button[type=submit]')
+
+
+setTimeout(() => {
+  formWrapper.style.display = 'inherit';
+  // wrapper.classList.add('overlay')
+}, 5000);
+
+btnClose.addEventListener('click', (e) => {
+  e.preventDefault();
+  formWrapper.style.display = 'none';
+});
 
 btn.addEventListener('click', (event) => {
 event.preventDefault();
