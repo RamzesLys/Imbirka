@@ -121,7 +121,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  z-index: 1;
+  /* z-index: 1; */
   min-width: 100%;
   border-bottom: #FFB5B5 0.01em solid;
 }
@@ -243,7 +243,7 @@ html, body {
 
 .header_hidden {
 	display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 105vw;
@@ -255,12 +255,13 @@ html, body {
   justify-content: center;
   transition: all 1s ease-in-out;
   gap: 3em;
+  z-index: 3;
 }
 
 .header_hidden.active {
   transform: translate(0);
   transition: all 1s;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 3;
   width: 100vw;
 }
@@ -273,7 +274,7 @@ html, body {
   gap: 4em;
 }
 
-.main_title {
+.main_title, .description_title {
   font-family: 'AdleryPro', sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
@@ -281,11 +282,12 @@ html, body {
   text-align: center;
   letter-spacing: 0.3rem;
   margin: 3rem 0;
-  text-shadow:   1px 1px 1px #fff, 
-  0 1px 1px #fff, 
+  text-shadow:   
+  1px 1px 1px #000, 
+  0 1px 1px #000, 
   -1px 0 1px #fff, 
   0 -1px 2px #fff;
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .order_btn,  .form_btn  {
@@ -311,10 +313,11 @@ html, body {
   background-color:rgba(255, 159, 52, .05);
   transition: ease-out .5s;
   position: relative;
-  text-shadow: 1px 1px 1px rgb(200, 185, 185),  
-  0 1px 1px rgb(200, 185, 185), 
-  -1px 0 1px rgb(200, 185, 185), 
-  0 -1px 1px rgb(200, 185, 185);
+  text-shadow:   
+  1px 1px 1px #000, 
+  0 1px 1px #000, 
+  -1px 0 1px #fff, 
+  0 -1px 2px #fff;
 }
 
 .order_btn:before, .form_btn:before {
@@ -371,17 +374,9 @@ html, body {
  }
 
  .description_title {
-  font-family: 'AdleryPro', sans-serif;
-  font-weight: 600;
   font-size: 2rem;
-  color: #FFB5B5;
-  text-align: center;
   letter-spacing: 0.2rem;
   margin: 2rem 0;
-  text-shadow:   1px 1px 1px #fff, 
-  0 1px 1px #fff, 
-  -1px 0 1px #fff, 
-  0 -1px 2px #fff;
  }
 
  .description_desc, .description_tastes {
@@ -478,7 +473,7 @@ html, body {
   background-image: url(../img/ButtonNoise.png);
   backdrop-filter: blur(0.3em);
   -webkit-backdrop-filter: blur(0.3em);
-  background-color:rgba(0, 0, 0, .3);
+  background-color:rgba(0, 0, 0, .02);
   transition: ease-out .5s;
   border-radius: 0.7em;
   box-shadow: #ffffff 0.2em 0.2em 1em;
@@ -492,7 +487,7 @@ html, body {
   transition: ease-in-out 3s;
   left: calc(100vw/2 - 10em);
   top: calc(100vh/2 - 15em);
-  z-index: 5em;
+  z-index: 4;
   display: none;
 }
 
@@ -554,6 +549,7 @@ html, body {
 
  .form_message {
   resize: none;
+  font-size: 0.9em;
  }
 
  .form_btn {

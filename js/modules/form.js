@@ -1,10 +1,7 @@
 function form() {
 const form = document.querySelector('.form'),
       btn = document.querySelector('button[type=submit]'),
-      btnClose = document.querySelector('.form_btn-close'),
-      wrapper = document.querySelector('.wrapper'),
-      URL_APP = 'https://script.google.com/macros/s/AKfycbwm0fR2OYxhoUU4aIS3XTib6-9wuKLuQi5Zo1RuxvmnYmD-UOvPfz4OWZrC7cQigdDYsg/exec'
-
+      btnClose = document.querySelector('.form_btn-close');
 let formName = document.querySelector('.form_name');
 let formPhone = document.querySelector('.form_phone');
 let formMessage = document.querySelector('.form_message')
@@ -23,7 +20,7 @@ const closeModal = (e) => {
 document.addEventListener( 'click', (e) => {
 	const withinBoundaries = e.composedPath().includes(form);
 	if ( ! withinBoundaries ) {
-		form.style.display = 'none'; // скрываем элемент т к клик был за его пределами
+		form.style.display = 'none'; 
   }
 })
 
