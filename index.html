@@ -274,15 +274,15 @@
 					<path d="M6 6L116.76 116.76" stroke="#FFB5B5" stroke-width="12" stroke-linecap="round"/>
 				</svg>	
 			</button>
-			<input required autofocus placeholder="Ваше ім'я" name="name" type="text" class="input form_name">
-			<input required placeholder="Ваш номер телефону" name="phone" type="phone" class="input form_phone">
-			<!-- <input placeholder="Повідомлення (не обов'язково)" name="message" type="text" class="input form_message"> -->
-			<textarea placeholder="Повідомлення (не обов'язково)" name="message" id="message"  rows="3" class="input form_message"></textarea>
+			<input required autofocus placeholder="Ваше ім'я" autocomplete="on" name="name" id="formName" type="text" class="input form_name">
+			<input required placeholder="Ваш номер телефону" autocomplete="on" name="phone" id="formPhone" type="phone" class="input form_phone">
+			<textarea placeholder="Повідомлення (не обов'язково)" name="message" id="formMessage"  rows="3" class="input form_message"></textarea>
 			<button class="form_btn" type="submit">Відправити</button>
+			<span class="form_result"></span>
 
 		</form>
 
-		<span id="sendText"></span>
+
 		<!-- <div class="form_wrapper">
 
 				
@@ -303,5 +303,7 @@
 
 	</div>
 	<script type="module" src="js/script.js"></script>
+	<script src="js/modules/form.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,4 @@
 function burgerMenu () {
-  console.log('Hi');
   const menuHamb = document.querySelector('.header_hamb');
   const menuHidden = document.querySelector('.header_hidden');
   
@@ -9,6 +8,5 @@ function burgerMenu () {
     console.log('click');
   })  
 }
-
 
 export default burgerMenu;
