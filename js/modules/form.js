@@ -1,5 +1,4 @@
 
-
   const TELEGRAM_BOT_TOKEN = '5876070852:AAEfiOexe0yyV07Ink-OZvwRvaDxMRh9XHo';
   const TELEGRAM_CHAT_ID = '@Imbirka_4e';
   const API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`; 
@@ -78,6 +77,7 @@
       btn.textContent = 'Відправити'
     }
   }
+
   
 
 
