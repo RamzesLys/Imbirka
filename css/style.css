@@ -570,6 +570,25 @@ html, body {
  background: rgba(0, 0, 0, .6);
 }
 
+.form_result {
+  position: absolute;
+  /* background-color:rgba(251, 203, 203, 0.3); */
+  border: 1px solid #FFB5B5;;
+  top: 10%;
+  right: -50%;
+  /* width: 12em;
+  height: 3em; */
+  border-radius: 1em 0 0 1em;
+  backdrop-filter: blur(2em);
+  padding: 1em;
+  transition: ease-in-out .8s;
+}
+
+.form_result.active {
+  right: 1%;
+  transition: ease-in-out .6s;
+}
+
 /* MEDIA */
 @media screen and (max-width: 1200px) {
   
