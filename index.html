@@ -274,8 +274,8 @@
 					<path d="M6 6L116.76 116.76" stroke="#FFB5B5" stroke-width="12" stroke-linecap="round"/>
 				</svg>	
 			</button>
-			<input required autofocus placeholder="Ваше ім'я" autocomplete="on" name="name" id="formName" type="text" class="input form_name">
-			<input required placeholder="Ваш номер телефону" autocomplete="on" name="phone" id="formPhone" type="phone" class="input form_phone">
+			<input required autofocus placeholder="Ваше ім'я" autocomplete="on" name="name" id="formName" type="text" class="input form_name" minlength="3">
+			<input required placeholder="Ваш номер телефону" autocomplete="on" name="phone" id="formPhone" type="phone" class="input form_phone" data-phone-pattern minlength="13">
 			<textarea placeholder="Повідомлення (не обов'язково)" name="message" id="formMessage"  rows="3" class="input form_message"></textarea>
 			<button class="form_btn" type="submit">Відправити</button>
 
@@ -307,6 +307,7 @@
 	</div>
 	<script type="module" src="js/script.js"></script>
 	<script src="js/modules/sendToTelegram.js"></script>
+	<!-- <script src="js/modules/secr.js"></script> -->
 
 </body>
 </html>

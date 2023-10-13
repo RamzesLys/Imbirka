@@ -460,19 +460,6 @@ html, body {
   transition: ease-in-out .3s;
 }
 
- /* .description_form {
-  padding: 1em;
-  margin: 2em 0;
-  background-image: url(../img/ButtonNoise.png);
-  backdrop-filter: blur(0.15em);
-  background-color:rgba(255, 159, 52, .05);
-  transition: ease-out .5s;
-  border-radius: 0.7em;
-  box-shadow: #21221c 0.2em 0.2em 1em;
- } */
-
-
-
 /* MODAL WINDOW */
 
 .form {
@@ -503,14 +490,6 @@ html, body {
   display: none;
   font-size: 3em;
 }
-
-
-/* .form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
- } */
 
  .form_btn-close {
   cursor: pointer;
@@ -543,7 +522,7 @@ html, body {
  .form_desc {
   text-align: center;
   padding: 1em 0;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #fff;
   font-family: "AdleryPro", sans-serif;
   letter-spacing: 0.1em;
