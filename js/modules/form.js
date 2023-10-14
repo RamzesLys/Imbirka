@@ -1,6 +1,5 @@
 function formShow() {
   
-
   const form = document.querySelector('.form'),
         btn = document.querySelector('button[type=submit]'),
         btnClose = document.querySelector('.form_btn-close');

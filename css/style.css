@@ -1,23 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 @font-face {
   font-family: 'AdleryPro';
-  src: url(../fonts/AdleryPro.ttf);
+  src: url(/fonts/AdleryPro.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'BanderaPro', serif;
+  src: url(/fonts/BanderaPro-Bold.ttf);
 }
 
-@font-face {
-  font-family: 'Pacifico', sans-serif;
-}
-
-h1 {
+h1, h2 {
   margin: 0;
-}
-
-h2 {
-  font-family: 'Orbitron';
-  font-size: 24px;
 }
 
 *,
@@ -39,7 +33,7 @@ h2 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'BanderaPro', serif;
 }
 
 html {
@@ -59,10 +53,6 @@ li {
 
 a {
   text-decoration: none;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
 }
 
 html, body {
@@ -126,7 +116,7 @@ html, body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1em 0;
   /* z-index: 1; */
   min-width: 100%;
   border-bottom: #FFB5B5 0.01em solid;
@@ -136,8 +126,8 @@ html, body {
   z-index: 4;
 }
 
-.header_logo img {
-  width: 6rem;
+.header_logo svg {
+  width: 6em;
 }
 
 .header_logo, .header_links, .header_link-phone {
@@ -154,17 +144,16 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: 'AdleryPro', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-family: 'BanderaPro', serif;
+  font-weight: 400;
+  font-size: 1em;
   color: #FFB5B5;
   cursor: pointer;
   z-index: 1;
 }
 
 .header_link-phone {
-  column-gap: 0.7rem;
-  font-family: 'Pacifico', sans-serif;
+  column-gap: 0.7em;
   padding-bottom: 0.2em;
 }
 
@@ -280,14 +269,21 @@ html, body {
   gap: 4em;
 }
 
+.header_links-hidden {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .main_title, .description_title {
   font-family: 'AdleryPro', sans-serif;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   color: #FFB5B5;
   text-align: center;
-  letter-spacing: 0.3rem;
-  margin: 3rem 0;
+  letter-spacing: 0.3em;
+  /* margin: 3em 0; */
   text-shadow:   
   1px 1px 1px #000, 
   0 1px 1px #000, 
@@ -296,26 +292,98 @@ html, body {
   z-index: 1;
 }
 
+.main_title-hidden {
+  font-family: 'AdleryPro', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: #FFB5B5;
+  text-align: center;
+  letter-spacing: 0.3em;
+  /* margin: 3em 0; */
+  text-shadow:   
+  1px 1px 1px #000, 
+  0 1px 1px #000, 
+  -1px 0 1px #fff, 
+  0 -1px 2px #fff;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_title-hidden-span {
+
+  font-family: 'BanderaPro', serif;
+  letter-spacing: 0.2em;
+  font-size: 0.6em;
+  transition: ease-out 1s;
+  animation: appearance 2s;
+  animation-iteration-count: infinite;
+  z-index: 3;
+  transition: ease-in-out .7s;
+  
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  
+  20% {
+    opacity: 0.6;
+  }
+  30% {
+    opacity: 0.8;
+  }
+ 
+  40% {  
+    opacity: 1;
+  }
+ 
+  50% {
+    opacity: 0.8;
+  }
+  
+  60% {
+    opacity: 0.6;
+  }
+  
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+
+
 .order_btn,  .form_btn  {
   /* z-index: 1; */
   display: inline-flex;
   flex-direction: row;
   align-items:center;
   justify-content: space-around; 
-  padding: 0.9em 0.5em 0.5em 0.5em;
+  padding: 0.7em;
   background-color: inherit;
   width: fit-content;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   border-radius: 0.7em;
   color: #A66011;
   box-shadow: #1a1a19 5px 5px 5px;
-  font-family: 'AdleryPro', sans-serif;
+  font-family: 'BanderaPro', sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   letter-spacing: 0.3em;
   background-image: url(../img/ButtonNoise.png);
-  backdrop-filter: blur(0.2em);
-  -webkit-backdrop-filter: blur(0.2em);
+  backdrop-filter: blur(0.3em);
+  -webkit-backdrop-filter: blur(0.3em);
   background-color:rgba(255, 159, 52, .05);
   transition: ease-out .5s;
   position: relative;
@@ -335,7 +403,7 @@ html, body {
   left: 0.2em;
   border-top: #A66011 solid 0.07em;
   border-bottom: #A66011 solid 0.07em;
-  border-radius: 0.7rem;
+  border-radius: 0.7em;
   transition: ease-out .5s;
   transform: scaleX(0);
 }
@@ -349,10 +417,10 @@ html, body {
   left: 0.2em;
   border-right: #A66011 solid 0.07em;
   border-left: #A66011 solid 0.07em;
-  border-radius: 0.7rem;
+  border-radius: 0.5em;
   transition: ease-out .5s;
   transform: scaleY(0);
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 
 .order_btn:hover::before, 
@@ -364,7 +432,7 @@ html, body {
 }
 
 .order_btn:hover {
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(0.1em);
   box-shadow: #1a1a19 1px 1px 1px;
   transition: ease-out .5s;
 }
@@ -373,28 +441,40 @@ html, body {
 
  .description {
   position: relative;
-  background: url(../img/bg-block2-7.png) no-repeat;
+  background: url(/img/bg-block2-7.png);
   object-fit: cover;
   background-color: #000;
-  padding: 2rem 0 0 0;
+  padding: 2em 0 0 0;
   background-attachment: fixed;
  }
 
+
  .description_title {
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  margin: 2rem 0;
- }
+  font-family: 'BanderaPro', serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  color: #FFB5B5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 1em 0;
+  text-shadow:   
+  1px 1px 1px #000, 
+  0 1px 1px #000, 
+  -1px 0 1px #fff, 
+  0 -1px 2px #fff;
+}
 
  .description_desc, .description_tastes {
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'BanderaPro', serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1em;
   color: #FFF;
   text-align: justify;
-  letter-spacing: 0.1rem;
-  line-height: 2rem;
+  letter-spacing: 0.1em;
+  line-height: 2em;
   font-weight: 300;
+  /* padding-left: 1em; */
  }
 
  .description_tastes {
@@ -408,9 +488,12 @@ html, body {
   text-align: left;
  }
 
+ .description_desc:last-of-type {
+  padding-top: 1em;
+ }
+
  /* FOOTER */
  footer {
-  /* height: 20vh; */
   padding: 1em 0;
   border-top: #FFB5B5 0.01em solid;
   display: flex;
@@ -427,10 +510,9 @@ html, body {
 }
 
 .RzS_logo-desc {
-  font-family: "AdleryPro", sans-serif;
-  font-size: 1.5em;
+  font-family: "Orbitron", serif;
+  font-size: 1em;
   color: #FFB5B5;
-  letter-spacing: 0.1em;
 }
 
 .footer_logo-block svg {
@@ -521,10 +603,10 @@ html, body {
 
  .form_desc {
   text-align: center;
-  padding: 1em 0;
+  padding: 0.5em 0;
   font-size: 1.5em;
   color: #fff;
-  font-family: "AdleryPro", sans-serif;
+  font-family: "BanderaPro", sans-serif;
   letter-spacing: 0.1em;
   text-shadow:   
   1px 1px 1px #000, 
@@ -546,17 +628,17 @@ html, body {
  }
 
  .form_btn {
-  margin: 0;
+  margin: 0.5em 0;
   cursor: pointer;
-  backdrop-filter: blur(1em);
-  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(0.3em);
+  -webkit-backdrop-filter: blur(0.3em);
   box-shadow: #fff 2px 2px 10px;
   transition: ease-out .5s;
  }
 
  .form_btn:hover {
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(0.1em);
+  -webkit-backdrop-filter: blur(0.1em);
   box-shadow: #fff 0px 0px 3px;
   transition: ease-out .5s;
 }
@@ -574,8 +656,8 @@ html, body {
   /* width: 12em;
   height: 3em; */
   border-radius: 1em 0 0 1em;
-  backdrop-filter: blur(2em);
-  -webkit-backdrop-filter: blur(2em);
+  backdrop-filter: blur(0.3em);
+  -webkit-backdrop-filter: blur(0.3em);
   padding: 1em;
   transition: ease-in-out .8s;
 }
@@ -595,10 +677,10 @@ html, body {
   right: 6%;
   border: 2px solid #FFB5B5;
   border-radius: 5em;
-  background-color:rgba(0, 0, 0, .4);
+  background-color:rgba(0, 0, 0, .3);
   box-shadow: #fff 0.2em 0.2em 0.7em;
-  backdrop-filter: blur(0.1em);
-  -webkit-backdrop-filter: blur(0.1em);
+  backdrop-filter: blur(0.3em);
+  -webkit-backdrop-filter: blur(0.3em);
   animation: shake 2s;
   animation-iteration-count: infinite;
   z-index: 3;
@@ -654,8 +736,8 @@ html, body {
   transform: scale(0.9);
   transition: ease-in-out .5s;
   border: 2px solid #fff;
-  /* backdrop-filter: blur(0.07em);
-  -webkit-backdrop-filter: blur(0.07em); */
+  backdrop-filter: blur(0.1em);
+  -webkit-backdrop-filter: blur(0.1em);
 }
 
 .buttons_shake:hover a svg path {
@@ -669,7 +751,12 @@ html, body {
 }
 
 @media screen and (max-width: 992px) {
- 
+ .main_title {
+    font-size: 2em;
+ }
+  .description_title {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -678,21 +765,75 @@ html, body {
   }
   .header_links, .header_link-phone {
     display: none;
+  }  
+  .main_title {
+    font-size: 1.5em;
   }
- 
-  
+  .description_title {
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+  }
+  .description_desc, .description_tastes {
+    font-size: 0.8em;
+  }
+  .order_btn, .form_btn {
+    font-size: 1em;
+  }
+  .order_btn {
+    margin: 3em;
+  }
+  .form_desc {
+    font-size: 1em;
+  }
+  .form input {
+    font-size: 1em;
+  }
+  .main_title {
+    display: none;
+  }
+  .main_title-hidden {
+    display: block;
+  }
+  .main_title-hidden-span{
+    transition: all ease-in-out 1s;
+  }
 }
 
 @media screen and (max-width: 575px) {
-	
+  .description_title {
+    line-height: 2em;
+  }
+  .RzS_logo-desc {
+    font-size: 0.8em;
+  }
+  .footer_logo-block svg {
+    width: 4em;
+  }
+  .form {
+    left: calc(100vw/2 - 12em);
+  }
 }
 
 @media (max-width: 480px) {
-	
+  .form {
+    left: calc(100vw/2 - 11em);
+    width: 70%;
+  }
+	.footer {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 1em;
+  }
 }
 
 @media (max-width: 320px) {
- 
+ .main_title-hidden-span {
+  font-size: 0.4em;
+ }
+ .description_title {
+  font-size: 0.8em;
+  line-height: 1.5em;
+ }
 }
 
 
