@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'AdleryPro';
-  src: url(/fonts/AdleryPro.ttf);
+  src: url(../fonts/AdleryPro.ttf);
 }
 
 @font-face {
   font-family: 'BanderaPro', serif;
-  src: url(/fonts/BanderaPro-Bold.ttf);
+  src: url(../fonts/BanderaPro-Bold.ttf);
 }
 
 h1, h2 {
@@ -432,7 +432,7 @@ html, body {
  /* DESCRITION */
  .description {
   position: relative;
-  background: url(/img/bg-block2-7.png);
+  background: url(../img/bg-block2-7.png);
   height: 100%;
   object-fit: cover;
   background-color: #000;
