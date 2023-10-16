@@ -369,7 +369,7 @@ html, body {
   border-radius: 0.7em;
   color: #A66011;
   box-shadow: #1a1a19 5px 5px 5px;
-  font-family: 'BanderaPro', sans-serif;
+  font-family: 'BanderaPro', serif;
   font-weight: 600;
   font-size: 1.2em;
   letter-spacing: 0.3em;
@@ -593,7 +593,7 @@ html, body {
   padding: 0.5em 0;
   font-size: 1.5em;
   color: #fff;
-  font-family: "BanderaPro", sans-serif;
+  font-family: "BanderaPro", serif;
   letter-spacing: 0.1em;
   text-shadow:   
   1px 1px 1px #000, 
