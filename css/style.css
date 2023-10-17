@@ -567,8 +567,8 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: -2.5em;
-  right: -2.5em;
+  top: -3em;
+  right: -3em;
   border-radius: 2em;
   padding: 0.5em;
   box-shadow: #ffffff 0.2em 0.2em 1em;
