@@ -311,7 +311,7 @@ html, body {
   letter-spacing: 0.2em;
   font-size: 0.6em;
   transition: ease-out 1s;
-  animation: appearance 2s;
+  animation: appearance 5s;
   animation-iteration-count: infinite;
   z-index: 3;
   transition: ease-in-out .7s;
@@ -325,14 +325,12 @@ html, body {
   10% {
     opacity: 0.4;
   }
-  
   20% {
     opacity: 0.6;
   }
   30% {
     opacity: 0.8;
   }
- 
   40% {  
     opacity: 1;
   }
@@ -340,11 +338,12 @@ html, body {
   50% {
     opacity: 0.8;
   }
-  
   60% {
     opacity: 0.6;
   }
-  
+  70% {
+    opacity: 0.7;
+  }
   80% {
     opacity: 0.4;
   }
@@ -762,7 +761,7 @@ html, body {
     font-size: 1em;
   }
   .form input {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .main_title {
     display: none;
