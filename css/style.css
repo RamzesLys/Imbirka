@@ -787,6 +787,9 @@ html, body {
   .form {
     left: calc(100vw/2 - 11em);
   }
+  .form_result {
+    right: -60%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -812,6 +815,9 @@ html, body {
   .form {
     left: calc(100vw/2 - 9em);
   }
+  .form_result {
+    right: -80%;
+  }
 }
 
 @media (max-width: 320px) {
@@ -826,6 +832,10 @@ html, body {
   font-size: 0.7em;
   left: calc(100vw/2 - 10em);
  }
+ .form_result {
+  right: -90%;
+  font-size: 0.8em;
+  }
 }
 
 
