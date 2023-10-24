@@ -6,7 +6,7 @@ function formShow() {
    
   setTimeout(() => {
     form.style.display = 'inherit';
-  }, 2000);
+  }, 7000);
     
   const closeModal = (e) => {
     e.preventDefault();
