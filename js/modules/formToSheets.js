@@ -19,6 +19,7 @@ function formToSheets() {
         sendTextShow();
       })
       .catch(error => console.error('Error!', error.message));
+      
   })
 
 
